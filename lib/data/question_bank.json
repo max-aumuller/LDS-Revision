@@ -1,0 +1,1143 @@
+[
+  {
+    "id": 1,
+    "type": "mcq",
+    "prompt": "Which measure of location is least affected by outliers?",
+    "options": [
+      "Mean",
+      "Median",
+      "Mode",
+      "Range"
+    ],
+    "correctAnswer": "Median",
+    "explanation": "The median only depends on the middle value(s), so extreme values don't distort it the way they do the mean.",
+    "topic": "Averages and Spread",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 2,
+    "type": "trueFalse",
+    "prompt": "A negative correlation coefficient means there is no relationship between two variables.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "False",
+    "explanation": "A negative correlation means one variable tends to decrease as the other increases — that IS a relationship, just an inverse one.",
+    "topic": "Correlation and Regression",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 3,
+    "type": "longAnswer",
+    "prompt": "Explain one reason why comparing daily mean temperature between Camborne and Leeming using only the mean could be misleading.",
+    "options": null,
+    "correctAnswer": "The mean alone doesn't show spread/variability — two locations could have the same mean temperature but very different ranges, so comparing means alone hides differences in consistency or extremes.",
+    "explanation": "Award marks for identifying that spread/variability matters alongside averages, and for referencing standard deviation or range as a way to capture this.",
+    "topic": "Comparing Distributions",
+    "difficulty": "higher",
+    "relatedLocation": "Camborne, Leeming"
+  },
+  {
+    "id": 4,
+    "type": "mcq",
+    "prompt": "The Daily Mean Pressure in the large data set is measured in:",
+    "options": [
+      "Pascals (Pa)",
+      "hectopascals (hPa)",
+      "kilopascals (kPa)",
+      "millimetres of mercury (mmHg)"
+    ],
+    "correctAnswer": "hectopascals (hPa)",
+    "explanation": "Daily Mean Pressure is measured in hectopascals (hPa).",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 5,
+    "type": "mcq",
+    "prompt": "The Daily Mean Wind Speed in the large data set is measured in:",
+    "options": [
+      "mph",
+      "km/h",
+      "knots",
+      "m/s"
+    ],
+    "correctAnswer": "knots",
+    "explanation": "Daily Mean Wind Speed is measured in knots.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 6,
+    "type": "mcq",
+    "prompt": "In the large data set, a Daily Total Rainfall value recorded as \"tr\" means:",
+    "options": [
+      "exactly 0.05 mm of rain fell",
+      "more than 0 mm but no more than 0.05 mm of rain fell",
+      "the rainfall data for that day is missing",
+      "the rain gauge was broken on that day"
+    ],
+    "correctAnswer": "more than 0 mm but no more than 0.05 mm of rain fell",
+    "explanation": "\"tr\" is a trace of rain: greater than 0 mm but no more than 0.05 mm.",
+    "topic": "Outliers and Cleaning Data",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 7,
+    "type": "mcq",
+    "prompt": "For each location and each year, the large data set contains data for how many days?",
+    "options": [
+      "153",
+      "184",
+      "214",
+      "365"
+    ],
+    "correctAnswer": "184",
+    "explanation": "184 days are recorded (1 May to 31 October).",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 8,
+    "type": "mcq",
+    "prompt": "The two years covered by the large data set are:",
+    "options": [
+      "1987 and 2015",
+      "1997 and 2015",
+      "1987 and 2005",
+      "1985 and 2017"
+    ],
+    "correctAnswer": "1987 and 2015",
+    "explanation": "The large data set covers 1987 and 2015.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 9,
+    "type": "mcq",
+    "prompt": "Which of the following is not a UK weather station in the large data set?",
+    "options": [
+      "Hurn",
+      "Leeming",
+      "Jacksonville",
+      "Camborne"
+    ],
+    "correctAnswer": "Jacksonville",
+    "explanation": "Jacksonville is in Florida, USA. The UK stations are Camborne, Heathrow, Hurn, Leeming and Leuchars.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 10,
+    "type": "mcq",
+    "prompt": "The only weather station in the large data set located in the southern hemisphere is:",
+    "options": [
+      "Perth",
+      "Beijing",
+      "Jacksonville",
+      "Camborne"
+    ],
+    "correctAnswer": "Perth",
+    "explanation": "Perth (Australia) is the only southern hemisphere station in the large data set.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": "Perth"
+  },
+  {
+    "id": 11,
+    "type": "mcq",
+    "prompt": "Daily Mean Total Cloud cover is measured in:",
+    "options": [
+      "percentages",
+      "tenths",
+      "oktas",
+      "hectopascals"
+    ],
+    "correctAnswer": "oktas",
+    "explanation": "Cloud cover is measured in oktas (eighths of the sky).",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 12,
+    "type": "mcq",
+    "prompt": "Daily Mean Visibility in the large data set is measured in:",
+    "options": [
+      "metres (m)",
+      "decametres (Dm)",
+      "kilometres (km)",
+      "miles"
+    ],
+    "correctAnswer": "decametres (Dm)",
+    "explanation": "Visibility is measured in decametres (Dm), where 1 Dm = 10 m.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 13,
+    "type": "mcq",
+    "prompt": "The most northerly UK weather station in the large data set is:",
+    "options": [
+      "Leeming",
+      "Heathrow",
+      "Leuchars",
+      "Camborne"
+    ],
+    "correctAnswer": "Leuchars",
+    "explanation": "Leuchars is in Scotland. North to south: Leuchars, Leeming, Heathrow, Hurn, with Camborne furthest south-west.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": "Leuchars"
+  },
+  {
+    "id": 14,
+    "type": "mcq",
+    "prompt": "In the UK, the prevailing wind direction is:",
+    "options": [
+      "north-east",
+      "south-west",
+      "east",
+      "north"
+    ],
+    "correctAnswer": "south-west",
+    "explanation": "The prevailing wind direction in the UK is south-west.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 15,
+    "type": "mcq",
+    "prompt": "Which of the following variables is recorded for Perth in the large data set?",
+    "options": [
+      "Daily Total Sunshine",
+      "Daily Mean Total Cloud cover",
+      "Daily Mean Pressure",
+      "Daily Maximum Relative Humidity"
+    ],
+    "correctAnswer": "Daily Mean Pressure",
+    "explanation": "Overseas stations record only Daily Mean Temperature, Daily Total Rainfall, Daily Mean Pressure and Daily Mean Wind Speed (with Beaufort conversion).",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": "Perth"
+  },
+  {
+    "id": 16,
+    "type": "mcq",
+    "prompt": "On a typical day at a UK weather station, the Daily Mean Pressure is closest to:",
+    "options": [
+      "101 hPa",
+      "913 hPa",
+      "1013 hPa",
+      "10130 hPa"
+    ],
+    "correctAnswer": "1013 hPa",
+    "explanation": "UK pressure values typically lie between about 980 and 1040 hPa.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 17,
+    "type": "mcq",
+    "prompt": "Priya intended to find summary statistics for the Daily Mean Temperature at Heathrow in 2015, but selected an incorrect variable. Her incorrect variable gave a mean of 1.8 and a standard deviation of 4.9. Using your knowledge of the large data set, which variable did Priya most likely select?",
+    "options": [
+      "Daily Mean Pressure",
+      "Daily Total Rainfall",
+      "Daily Maximum Relative Humidity",
+      "Daily Mean Visibility"
+    ],
+    "correctAnswer": "Daily Total Rainfall",
+    "explanation": "A small mean with a standard deviation much larger than the mean indicates Daily Total Rainfall, which is heavily positively skewed with many 0 values and occasional very wet days.",
+    "topic": "Averages and Spread",
+    "difficulty": "higher",
+    "relatedLocation": "Heathrow"
+  },
+  {
+    "id": 18,
+    "type": "mcq",
+    "prompt": "Which of the following variables in the large data set is qualitative?",
+    "options": [
+      "Daily Mean Wind Speed (knots)",
+      "Cardinal Wind Direction",
+      "Daily Maximum Gust",
+      "Daily Mean Visibility"
+    ],
+    "correctAnswer": "Cardinal Wind Direction",
+    "explanation": "Cardinal Wind Direction (e.g. SW, NE) is categorical. The Beaufort conversion of wind speed is also qualitative.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 19,
+    "type": "mcq",
+    "prompt": "The months covered by the large data set in each year are:",
+    "options": [
+      "January to June",
+      "April to September",
+      "May to October",
+      "June to December"
+    ],
+    "correctAnswer": "May to October",
+    "explanation": "The large data set covers May to October each year.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 20,
+    "type": "mcq",
+    "prompt": "A random sample of days is taken from the large data set for Perth. The days sampled have Daily Mean Temperatures of 8.2C, 9.1C, 7.6C and 8.8C. These days most likely come from:",
+    "options": [
+      "October",
+      "May",
+      "July",
+      "It is impossible for Perth to have these temperatures"
+    ],
+    "correctAnswer": "July",
+    "explanation": "Perth is in the southern hemisphere, so July is mid-winter and gives the coldest temperatures in the data set.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "higher",
+    "relatedLocation": "Perth"
+  },
+  {
+    "id": 21,
+    "type": "mcq",
+    "prompt": "In the large data set, a Daily Maximum Relative Humidity above 95% is associated with:",
+    "options": [
+      "heavy rain",
+      "strong gusts",
+      "mist or fog",
+      "high pressure"
+    ],
+    "correctAnswer": "mist or fog",
+    "explanation": "Humidity above 95% indicates misty or foggy conditions.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 22,
+    "type": "mcq",
+    "prompt": "One okta represents:",
+    "options": [
+      "one tenth of the sky covered by cloud",
+      "one eighth of the sky covered by cloud",
+      "one percent of the sky covered by cloud",
+      "one hour of cloud cover"
+    ],
+    "correctAnswer": "one eighth of the sky covered by cloud",
+    "explanation": "An okta represents one eighth of the sky.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 23,
+    "type": "mcq",
+    "prompt": "In the large data set, a piece of missing data is recorded as:",
+    "options": [
+      "0",
+      "tr",
+      "n/a",
+      "an empty cell"
+    ],
+    "correctAnswer": "n/a",
+    "explanation": "Missing data is recorded as n/a.",
+    "topic": "Outliers and Cleaning Data",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 24,
+    "type": "mcq",
+    "prompt": "Before calculating the mean Daily Total Rainfall, values recorded as \"tr\" are most commonly cleaned by:",
+    "options": [
+      "deleting the whole row of data",
+      "replacing them with 0",
+      "replacing them with 0.5",
+      "replacing them with the mean of the other values"
+    ],
+    "correctAnswer": "replacing them with 0",
+    "explanation": "The standard convention is to replace \"tr\" with 0.",
+    "topic": "Outliers and Cleaning Data",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 25,
+    "type": "mcq",
+    "prompt": "Heathrow often records higher Daily Mean Temperatures than the other UK stations. Using your knowledge of the large data set, the best explanation is that Heathrow:",
+    "options": [
+      "is the most northerly station",
+      "is in a large urban area in the south of the UK",
+      "is on the west coast",
+      "is at the highest altitude"
+    ],
+    "correctAnswer": "is in a large urban area in the south of the UK",
+    "explanation": "Heathrow is in the south and within the London urban area, giving an urban heat island effect.",
+    "topic": "Comparing Distributions",
+    "difficulty": "foundation",
+    "relatedLocation": "Heathrow"
+  },
+  {
+    "id": 26,
+    "type": "mcq",
+    "prompt": "Cameron lists the 184 days for Hurn in 2015 in date order and selects every 8th day, starting from a randomly chosen day among the first 8. The sampling method Cameron used is:",
+    "options": [
+      "simple random sampling",
+      "opportunity sampling",
+      "systematic sampling",
+      "quota sampling"
+    ],
+    "correctAnswer": "systematic sampling",
+    "explanation": "Systematic sampling takes every kth item from an ordered list after a random start.",
+    "topic": "Sampling Methods",
+    "difficulty": "foundation",
+    "relatedLocation": "Hurn"
+  },
+  {
+    "id": 27,
+    "type": "mcq",
+    "prompt": "The variable Daily Mean Wind Speed at UK stations is also classified in the large data set using:",
+    "options": [
+      "the Richter scale",
+      "the Beaufort scale",
+      "the Fujita scale",
+      "the Saffir-Simpson scale"
+    ],
+    "correctAnswer": "the Beaufort scale",
+    "explanation": "Wind speed is classified using the Beaufort scale (e.g. Light, Moderate, Fresh).",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 28,
+    "type": "mcq",
+    "prompt": "Rosie codes the Daily Mean Pressure, x, for Leeming using y = x - 1000. The standard deviation of y is 8.3. The standard deviation of x is:",
+    "options": [
+      "8.3",
+      "1008.3",
+      "991.7",
+      "impossible to determine"
+    ],
+    "correctAnswer": "8.3",
+    "explanation": "Subtracting a constant does not change the standard deviation, so the standard deviation of x equals the standard deviation of y, 8.3.",
+    "topic": "Averages and Spread",
+    "difficulty": "foundation",
+    "relatedLocation": "Leeming"
+  },
+  {
+    "id": 29,
+    "type": "mcq",
+    "prompt": "The product moment correlation coefficient between Daily Mean Wind Speed and Daily Maximum Gust at Camborne is most likely to be close to:",
+    "options": [
+      "-0.9",
+      "0",
+      "0.2",
+      "0.9"
+    ],
+    "correctAnswer": "0.9",
+    "explanation": "Windier days have stronger gusts, so a strong positive correlation is expected.",
+    "topic": "Correlation and Regression",
+    "difficulty": "foundation",
+    "relatedLocation": "Camborne"
+  },
+  {
+    "id": 30,
+    "type": "mcq",
+    "prompt": "Jacksonville sometimes records very large Daily Total Rainfall values in August and September. Using your knowledge of the large data set, the best explanation is:",
+    "options": [
+      "melting snow",
+      "tropical storms and hurricanes",
+      "its high latitude",
+      "low humidity"
+    ],
+    "correctAnswer": "tropical storms and hurricanes",
+    "explanation": "Jacksonville is in Florida, which experiences the Atlantic hurricane/tropical storm season in late summer.",
+    "topic": "Comparing Distributions",
+    "difficulty": "foundation",
+    "relatedLocation": "Jacksonville"
+  },
+  {
+    "id": 31,
+    "type": "mcq",
+    "prompt": "Which UK weather station would you expect to record the highest Daily Mean Wind Speeds on average?",
+    "options": [
+      "Heathrow",
+      "Leeming",
+      "Camborne",
+      "None - all UK stations have the same wind climate"
+    ],
+    "correctAnswer": "Camborne",
+    "explanation": "Camborne is on the exposed south-west coast, facing the prevailing south-westerly winds from the Atlantic.",
+    "topic": "Comparing Distributions",
+    "difficulty": "foundation",
+    "relatedLocation": "Camborne"
+  },
+  {
+    "id": 32,
+    "type": "mcq",
+    "prompt": "The total number of weather stations in the large data set is:",
+    "options": [
+      "5",
+      "6",
+      "8",
+      "10"
+    ],
+    "correctAnswer": "8",
+    "explanation": "There are 8 stations: five in the UK (Camborne, Heathrow, Hurn, Leeming, Leuchars) and three overseas (Beijing, Jacksonville, Perth).",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 33,
+    "type": "mcq",
+    "prompt": "The UK weather data in the large data set was collected by:",
+    "options": [
+      "the Met Office",
+      "the Environment Agency",
+      "NASA",
+      "the BBC"
+    ],
+    "correctAnswer": "the Met Office",
+    "explanation": "The UK weather data was collected by the Met Office.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 34,
+    "type": "mcq",
+    "prompt": "Which pair of variables from the large data set would you expect to have a strong negative correlation?",
+    "options": [
+      "Daily Mean Wind Speed and Daily Maximum Gust",
+      "Daily Mean Total Cloud cover and Daily Total Sunshine",
+      "Daily Mean Temperature and Daily Total Sunshine",
+      "Daily Mean Pressure and Daily Mean Visibility"
+    ],
+    "correctAnswer": "Daily Mean Total Cloud cover and Daily Total Sunshine",
+    "explanation": "More cloud cover means fewer hours of sunshine.",
+    "topic": "Correlation and Regression",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 35,
+    "type": "mcq",
+    "prompt": "How many different values can the variable Daily Mean Total Cloud cover take?",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "100"
+    ],
+    "correctAnswer": "9",
+    "explanation": "Cloud cover takes integer values 0 to 8 inclusive, giving 9 possible values.",
+    "topic": "Probability",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 36,
+    "type": "trueFalse",
+    "prompt": "The large data set contains weather data for all 12 months of 1987 and 2015.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "False",
+    "explanation": "Only May to October are included.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 37,
+    "type": "trueFalse",
+    "prompt": "A Daily Total Rainfall value of \"tr\" should be treated as exactly 0.05 mm when calculating the mean.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "False",
+    "explanation": "\"tr\" means a trace (greater than 0 mm, up to 0.05 mm) and is usually cleaned to 0.",
+    "topic": "Outliers and Cleaning Data",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 38,
+    "type": "trueFalse",
+    "prompt": "Leuchars is located in Scotland.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "True",
+    "explanation": "Leuchars is in Scotland.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": "Leuchars"
+  },
+  {
+    "id": 39,
+    "type": "trueFalse",
+    "prompt": "Daily Maximum Gust is measured in km/h.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "False",
+    "explanation": "It is measured in knots.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 40,
+    "type": "trueFalse",
+    "prompt": "In the large data set, Perth experiences winter during June, July and August.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "True",
+    "explanation": "Perth is in the southern hemisphere, so June-August is winter.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": "Perth"
+  },
+  {
+    "id": 41,
+    "type": "trueFalse",
+    "prompt": "All eight weather stations in the large data set record Daily Total Sunshine.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "False",
+    "explanation": "The overseas stations (Beijing, Jacksonville, Perth) do not record sunshine.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 42,
+    "type": "trueFalse",
+    "prompt": "Daily Mean Total Cloud cover can take 9 possible values.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "True",
+    "explanation": "The values 0 to 8 oktas give 9 possible values.",
+    "topic": "Probability",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 43,
+    "type": "trueFalse",
+    "prompt": "The Daily Mean Pressure at UK weather stations typically lies between about 980 hPa and 1040 hPa.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "True",
+    "explanation": "This is the typical range for UK pressure values.",
+    "topic": "Averages and Spread",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 44,
+    "type": "trueFalse",
+    "prompt": "Cardinal Wind Direction is a quantitative variable.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "False",
+    "explanation": "It is qualitative (categorical).",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 45,
+    "type": "trueFalse",
+    "prompt": "Each location has 184 days of data recorded for each of the two years.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "True",
+    "explanation": "Each location has 184 days of data per year.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 46,
+    "type": "trueFalse",
+    "prompt": "Heathrow is the most westerly UK weather station in the large data set.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "False",
+    "explanation": "Camborne is the most westerly.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": "Heathrow"
+  },
+  {
+    "id": 47,
+    "type": "trueFalse",
+    "prompt": "A Daily Mean Total Cloud cover of 8 oktas means the sky was, on average, completely covered by cloud.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "True",
+    "explanation": "8 oktas represents a fully overcast sky.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 48,
+    "type": "trueFalse",
+    "prompt": "Beijing lies further north than Jacksonville.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "True",
+    "explanation": "Beijing is at about 40N; Jacksonville is at about 30N.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": "Beijing"
+  },
+  {
+    "id": 49,
+    "type": "trueFalse",
+    "prompt": "Daily Mean Temperature is recorded in the large data set to the nearest 0.1C.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "True",
+    "explanation": "Daily Mean Temperature is recorded to the nearest 0.1C.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 50,
+    "type": "trueFalse",
+    "prompt": "Daily Mean Visibility is measured in metres.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "False",
+    "explanation": "It is measured in decametres (Dm).",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 51,
+    "type": "trueFalse",
+    "prompt": "Selecting every 7th day from a list of days in date order, starting from a randomly chosen day in the first week, is an example of simple random sampling.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "False",
+    "explanation": "This is systematic sampling, not simple random sampling.",
+    "topic": "Sampling Methods",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 52,
+    "type": "trueFalse",
+    "prompt": "In 2015, the data runs from 1st May to 31st October.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "True",
+    "explanation": "The 2015 data runs from 1 May to 31 October.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 53,
+    "type": "trueFalse",
+    "prompt": "Camborne generally records higher Daily Total Rainfall than Heathrow.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "True",
+    "explanation": "Camborne is coastal, in the wetter south-west, exposed to Atlantic weather systems.",
+    "topic": "Comparing Distributions",
+    "difficulty": "foundation",
+    "relatedLocation": "Camborne"
+  },
+  {
+    "id": 54,
+    "type": "trueFalse",
+    "prompt": "If every value of Daily Mean Pressure has 1010 subtracted from it, the standard deviation of the data is unchanged.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "True",
+    "explanation": "Subtracting a constant leaves the spread (standard deviation) unchanged.",
+    "topic": "Averages and Spread",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 55,
+    "type": "trueFalse",
+    "prompt": "A knot is a measure of distance.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "False",
+    "explanation": "A knot is a measure of speed: one nautical mile per hour.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "foundation",
+    "relatedLocation": null
+  },
+  {
+    "id": 56,
+    "type": "longAnswer",
+    "prompt": "Amelia is studying the Daily Mean Temperature, x C, at Hurn for June 2015. The data for all 30 days are summarised by: n = 30, sum of x = 486, sum of x^2 = 7998. (a) Calculate the mean Daily Mean Temperature for these 30 days. (b) Calculate the standard deviation of the Daily Mean Temperature for these 30 days. (c) Amelia suggests using her answer to part (a) as an estimate for the mean Daily Mean Temperature at Hurn for the whole of 2015. State, giving a reason, whether you would expect the actual value to be higher or lower than her estimate.",
+    "options": null,
+    "correctAnswer": "(a) Mean = 486 / 30 = 16.2C. (b) Standard deviation = sqrt(7998/30 - 16.2^2) = sqrt(266.6 - 262.44) = sqrt(4.16) = 2.04C (3 s.f.). (c) Lower - June is one of the warmest months, and a full year (or the full May-October data set) includes colder months, which would lower the mean.",
+    "explanation": "Averages and Spread applied to real large data set context; also touches on the limitation of using a single month to estimate a yearly figure.",
+    "topic": "Averages and Spread",
+    "difficulty": "higher",
+    "relatedLocation": "Hurn"
+  },
+  {
+    "id": 57,
+    "type": "longAnswer",
+    "prompt": "Tomas is studying the large data set for October 2015. He codes the variable Daily Mean Pressure, x, using the formula y = x - 1005. The data for all 31 days from Leeming are summarised by: sum of y = 341, sum of y^2 = 5219. (a) State the units of the variable x. (b) Find the mean Daily Mean Pressure for these 31 days. (c) Find the standard deviation of the Daily Mean Pressure for these 31 days.",
+    "options": null,
+    "correctAnswer": "(a) Hectopascals (hPa). (b) Mean of y = 341/31 = 11, so mean of x = 11 + 1005 = 1016 hPa. (c) Standard deviation of x equals standard deviation of y, since subtracting a constant does not change spread: standard deviation of y = sqrt(5219/31 - 11^2) = sqrt(168.35 - 121) = sqrt(47.35) = 6.88 hPa (3 s.f.).",
+    "explanation": "Coding is a common exam technique; make sure the standard deviation is unaffected by the subtraction but the mean needs the constant added back.",
+    "topic": "Averages and Spread",
+    "difficulty": "higher",
+    "relatedLocation": "Leeming"
+  },
+  {
+    "id": 58,
+    "type": "longAnswer",
+    "prompt": "Freya is studying the Daily Total Rainfall, x mm, at Camborne for 1987. She used all the data from the large data set and summarised the information in a frequency table. Some values are recorded as \"tr\" and some as \"n/a\". (a) Explain how the data will need to be cleaned before Freya can start to calculate statistics such as the mean and the standard deviation. After cleaning, Freya's 184 values give sum of x = 460 and sum of x^2 = 5290. (b) Calculate estimates for (i) the mean Daily Total Rainfall, (ii) the standard deviation of the Daily Total Rainfall. (c) State, giving a reason, whether the mean or the median would be a better measure of the central tendency of Daily Total Rainfall.",
+    "options": null,
+    "correctAnswer": "(a) Values recorded as \"tr\" (a trace) must be replaced with a numerical value, usually 0; values recorded as \"n/a\" (missing data) must be removed/excluded, since calculations cannot be performed on non-numerical entries. (b)(i) Mean = 460/184 = 2.5 mm. (ii) Standard deviation = sqrt(5290/184 - 2.5^2) = sqrt(28.75 - 6.25) = sqrt(22.5) = 4.74 mm (3 s.f.). (c) The median - rainfall data is positively skewed (many days with 0 or trace rainfall and a few very wet days), and the median is unaffected by the extreme values, whereas the mean is inflated by them.",
+    "explanation": "Combines data cleaning with averages/spread and choice of an appropriate summary statistic for skewed data.",
+    "topic": "Outliers and Cleaning Data",
+    "difficulty": "higher",
+    "relatedLocation": "Camborne"
+  },
+  {
+    "id": 59,
+    "type": "longAnswer",
+    "prompt": "Jonah believes that the random variable C, representing Daily Mean Total Cloud cover from the large data set, can be modelled by a discrete uniform distribution. (a) Write down the probability distribution for C. (b) Using this model, find the probability that cloud cover is less than 25%. Jonah used all the data from the large data set for Leeming in 2015 and found that the proportion of days with cloud cover of less than 25% was 0.098. (c) Comment on the suitability of Jonah's model in the light of this information. (d) Suggest an appropriate refinement to Jonah's model.",
+    "options": null,
+    "correctAnswer": "(a) P(C = c) = 1/9 for c = 0, 1, 2, ..., 8. (b) Less than 25% of 8 oktas means c = 0 or c = 1, so P(C < 2) = 2/9 = 0.222. (c) The observed proportion (0.098) is much lower than the model predicts (0.222), so the model is not suitable. (d) Use a non-uniform discrete distribution with probabilities based on the observed frequencies (e.g. higher probabilities for larger amounts of cloud cover).",
+    "explanation": "A classic 'critique the model against real large data set evidence' question.",
+    "topic": "Probability",
+    "difficulty": "higher",
+    "relatedLocation": "Leeming"
+  },
+  {
+    "id": 60,
+    "type": "longAnswer",
+    "prompt": "Using the large data set for Hurn in 2015, Maya estimates that the probability a randomly chosen day has a Daily Mean Total Cloud cover of 8 oktas is 0.25. A random sample of 10 days is taken. The random variable X represents the number of these days with cloud cover of 8 oktas. (a) State two assumptions Maya needs to make in order to use the model X ~ B(10, 0.25). (b) Using this model, find P(X is at least 3). (c) Explain why the binomial model may not be suitable if the sample consists of 10 consecutive days.",
+    "options": null,
+    "correctAnswer": "(a) The cloud cover on each day is independent of every other day; the probability of 8 oktas is constant (0.25) for every day. (b) P(X is at least 3) = 1 - P(X is at most 2) = 1 - 0.5256 = 0.474 (3 s.f.). (c) Consecutive days' weather is not independent - a cloudy day is more likely to be followed by another cloudy day since weather systems persist, so the independence assumption fails.",
+    "explanation": "Binomial modelling assumptions applied to a genuine weather-data context.",
+    "topic": "Probability",
+    "difficulty": "higher",
+    "relatedLocation": "Hurn"
+  },
+  {
+    "id": 61,
+    "type": "longAnswer",
+    "prompt": "Priya believes that there is a positive correlation between Daily Mean Temperature and Daily Total Sunshine at Heathrow. She calculates the product moment correlation coefficient between these two variables for a random sample of 25 days and obtains r = 0.492. Test whether or not there is evidence of a positive correlation between Daily Mean Temperature and Daily Total Sunshine. State your hypotheses clearly, use a 5% level of significance, and state the critical value used.",
+    "options": null,
+    "correctAnswer": "H0: rho = 0, H1: rho > 0. Critical value for n = 25 at the 5% level (one tail) = 0.3365. Since 0.492 > 0.3365, reject H0. There is evidence of a positive correlation between Daily Mean Temperature and Daily Total Sunshine.",
+    "explanation": "One-tailed hypothesis test for correlation using critical value tables.",
+    "topic": "Correlation and Regression",
+    "difficulty": "higher",
+    "relatedLocation": "Heathrow"
+  },
+  {
+    "id": 62,
+    "type": "longAnswer",
+    "prompt": "Dev calculates the product moment correlation coefficient between Daily Mean Pressure and Daily Total Rainfall for a random sample of 30 days at Leuchars and obtains r = -0.312. Test at the 5% level of significance whether or not there is evidence of a correlation between Daily Mean Pressure and Daily Total Rainfall. State your hypotheses clearly and state the critical value used.",
+    "options": null,
+    "correctAnswer": "H0: rho = 0, H1: rho is not equal to 0 (two-tailed, since 'a correlation' is being tested). Critical values for n = 30 at the 5% level (two tail) = plus or minus 0.3610. Since the magnitude of -0.312 is less than 0.3610, there is insufficient evidence to reject H0. There is no evidence of a correlation between Daily Mean Pressure and Daily Total Rainfall.",
+    "explanation": "Two-tailed hypothesis test for correlation - note the difference in wording from a one-tailed test.",
+    "topic": "Correlation and Regression",
+    "difficulty": "higher",
+    "relatedLocation": "Leuchars"
+  },
+  {
+    "id": 63,
+    "type": "longAnswer",
+    "prompt": "Elin finds the equation of the regression line of Daily Total Sunshine, s hours, on Daily Mean Total Cloud cover, c oktas, for Hurn in June 2015 to be s = 12.6 - 0.85c. (a) Interpret the gradient of this regression line. (b) Give a reason why it would not be sensible to use this equation to predict the Daily Total Sunshine on a day when the cloud cover is 15 oktas. (c) State, giving a reason, whether this equation could be used to predict the cloud cover on a day with 6 hours of sunshine.",
+    "options": null,
+    "correctAnswer": "(a) For each additional okta of cloud cover, the Daily Total Sunshine decreases by 0.85 hours on average. (b) Cloud cover cannot exceed 8 oktas, so 15 oktas is outside the range of the data - this would be extrapolation using an impossible value, making the prediction unreliable/invalid. (c) No - this is the regression line of s on c, so it can only be used to predict s from c, not c from s.",
+    "explanation": "Regression interpretation, extrapolation, and the direction-of-prediction limitation of a regression line.",
+    "topic": "Correlation and Regression",
+    "difficulty": "higher",
+    "relatedLocation": "Hurn"
+  },
+  {
+    "id": 64,
+    "type": "longAnswer",
+    "prompt": "A random sample of 20 days is taken from the large data set for Leuchars in 2015. A scatter diagram is drawn with Daily Mean Temperature, measured in C, on the x-axis. The scatter diagram shows a strong negative correlation. Using your knowledge of the large data set, (a) suggest which variable could be on the y-axis, (b) state the units used in the large data set for this variable.",
+    "options": null,
+    "correctAnswer": "(a) Daily Mean Pressure (or Daily Total Rainfall, or Daily Maximum Relative Humidity) - any variable plausibly negatively correlated with temperature. (b) The units must match the variable chosen: pressure in hPa; rainfall in mm; humidity in %.",
+    "explanation": "Open-ended question requiring genuine familiarity with which LDS variables are plausibly correlated.",
+    "topic": "Correlation and Regression",
+    "difficulty": "higher",
+    "relatedLocation": "Leuchars"
+  },
+  {
+    "id": 65,
+    "type": "longAnswer",
+    "prompt": "Sofia knows that, in the UK, winds circulate in a clockwise direction around a region of high pressure and in an anticlockwise direction around a region of low pressure. The table gives the Daily Mean Pressure for 3 locations from the large data set on a day in 2015: Camborne 997 hPa, Hurn 996 hPa, Leeming 997 hPa. The Cardinal Wind Directions for these 3 locations on this day were, in random order, E, SW and S. You may assume that these 3 locations were under a single region of pressure. Using your knowledge of the large data set, place each of these Cardinal Wind Directions in the correct location. Give a reason for your answer.",
+    "options": null,
+    "correctAnswer": "The pressures (around 996-997 hPa) are low, so wind circulates anticlockwise around the region. From north to south the locations are Leeming, Hurn, Camborne (with Camborne furthest south-west). Remembering that wind direction is the direction the wind blows from, an anticlockwise circulation gives: Leeming - E, Hurn - S, Camborne - SW. Any consistent anticlockwise assignment with clear reasoning about the stations' relative positions earns the marks.",
+    "explanation": "Applies geographic knowledge of station positions plus a meteorological rule (wind circulation direction) - a genuinely tricky large data set application question.",
+    "topic": "Large Data Set - Context",
+    "difficulty": "higher",
+    "relatedLocation": "Camborne, Hurn, Leeming"
+  },
+  {
+    "id": 66,
+    "type": "longAnswer",
+    "prompt": "The box plots below summarise the Daily Total Rainfall for Camborne and Heathrow for 2015. (Camborne has a higher median, larger IQR and several outliers above the upper whisker; Heathrow has a lower median and smaller spread; both distributions have the median close to the lower quartile.) (a) Compare the distributions of Daily Total Rainfall for the two locations. You should compare a measure of location and a measure of spread. (b) Describe the skewness of the Daily Total Rainfall at Camborne. Give a reason for your answer. (c) Using your knowledge of the large data set, give a reason why Camborne might be expected to have higher rainfall than Heathrow.",
+    "options": null,
+    "correctAnswer": "(a) The median rainfall at Camborne is higher than at Heathrow, so Camborne typically has more rain; the IQR (and range) at Camborne is larger than at Heathrow, so rainfall at Camborne is more variable. (b) Positive skew - the median is closer to the lower quartile than to the upper quartile, and there are outliers/a long whisker at the upper end. (c) Camborne is on the south-west coast of the UK, exposed to the prevailing south-westerly winds carrying moist air from the Atlantic, so it receives more rainfall than Heathrow, which is further east/inland.",
+    "explanation": "Box plot comparison combining location, spread, skewness and a geographic explanation.",
+    "topic": "Comparing Distributions",
+    "difficulty": "higher",
+    "relatedLocation": "Camborne, Heathrow"
+  },
+  {
+    "id": 67,
+    "type": "longAnswer",
+    "prompt": "Kofi is studying the Daily Maximum Gust, g knots, at Camborne for September 2015. For these data, the mean is 21 knots and the standard deviation is 6 knots. Kofi defines an outlier as a value more than 2 standard deviations from the mean. (a) Show that a Daily Maximum Gust of 35 knots is an outlier. (b) One value in the data is recorded as 8 knots. Determine whether this value is an outlier. (c) Kofi decides to keep both of these values in his data set. State, giving a reason, whether this decision is sensible.",
+    "options": null,
+    "correctAnswer": "(a) 21 + 2 times 6 = 33; since 35 is greater than 33, 35 knots is an outlier. (b) 21 - 2 times 6 = 9; since 8 is less than 9, 8 knots is also an outlier. (c) Sensible - both values are plausible weather measurements (genuine extreme values rather than recording errors), so they should be kept in the data.",
+    "explanation": "Standard 'mean plus/minus 2 sd' outlier definition applied directly to LDS-style data.",
+    "topic": "Outliers and Cleaning Data",
+    "difficulty": "foundation",
+    "relatedLocation": "Camborne"
+  },
+  {
+    "id": 68,
+    "type": "longAnswer",
+    "prompt": "One of the months from the large data set for Perth in 2015 has mean Daily Mean Temperature 12.1C and standard deviation 1.9C. Suggest, giving a reason, a month these data may have come from.",
+    "options": null,
+    "correctAnswer": "July (accept June or August). Perth is in the southern hemisphere so June-August is winter; a low mean of 12.1C with a small standard deviation is consistent with a mid-winter month.",
+    "explanation": "Requires knowing Perth's hemisphere and typical seasonal temperature pattern.",
+    "topic": "Comparing Distributions",
+    "difficulty": "foundation",
+    "relatedLocation": "Perth"
+  },
+  {
+    "id": 69,
+    "type": "longAnswer",
+    "prompt": "The Daily Total Sunshine, s hours, at Heathrow for the 30 days of June 2015 is summarised in a grouped frequency table: 0 to under 2 hours: 4 days; 2 to under 5 hours: 7 days; 5 to under 8 hours: 9 days; 8 to under 12 hours: 7 days; 12 to under 16 hours: 3 days. (a) Use linear interpolation to estimate the median Daily Total Sunshine. (b) Calculate an estimate for the mean Daily Total Sunshine. (c) State, giving a reason, whether the actual mean of the 30 data values could be found from the large data set itself.",
+    "options": null,
+    "correctAnswer": "(a) The median is the 15th value. Cumulative frequencies are 4, 11, 20, so the median lies in the 5 to under 8 hours class: median = 5 + ((15-11)/9) times 3 = 6.33 hours (3 s.f.). (b) Using midpoints 1, 3.5, 6.5, 10, 14: mean = (4x1 + 7x3.5 + 9x6.5 + 7x10 + 3x14) / 30 = 199/30 = 6.63 hours (3 s.f.). (c) Yes - the large data set contains the individual daily values (to the nearest 0.1 hour), so the exact mean can be calculated directly from the raw data rather than estimated from grouped data.",
+    "explanation": "Grouped data techniques (linear interpolation for the median, midpoint estimate for the mean) plus a reminder that the LDS itself is raw, ungrouped data.",
+    "topic": "Averages and Spread",
+    "difficulty": "higher",
+    "relatedLocation": "Heathrow"
+  },
+  {
+    "id": 70,
+    "type": "longAnswer",
+    "prompt": "Aisha wishes to take a sample of 20 days from the 184 days for Hurn in 2015 in order to investigate Daily Mean Wind Speed. (a) Describe how she could use systematic sampling to select her sample. (b) Give one advantage of systematic sampling over opportunity sampling in this context. (c) Aisha's friend suggests she should instead simply use the first 20 days of May. Give a reason why this sample is likely to produce a biased estimate of the mean Daily Mean Wind Speed for 2015.",
+    "options": null,
+    "correctAnswer": "(a) List the 184 days in date order; 184 divided by 20 is approximately 9, so choose a random starting day from the first 9 days (using a random number generator) and then select every 9th day thereafter until 20 days are chosen. (b) The sample is spread evenly across the whole May-October period, so it is less likely to be biased towards particular weather conditions; every day has a chance of selection at the start, unlike opportunity sampling. (c) The first 20 days of May all come from late spring, when the weather may differ systematically from the rest of the period, so the sample would not be representative of the whole of May-October.",
+    "explanation": "Full worked description of systematic sampling plus a bias-in-sampling discussion.",
+    "topic": "Sampling Methods",
+    "difficulty": "higher",
+    "relatedLocation": "Hurn"
+  },
+  {
+    "id": 71,
+    "type": "longAnswer",
+    "prompt": "Marcus wants to compare the Daily Mean Temperature in 1987 and in 2015 using data from the large data set. (a) Explain how Marcus could take a random sample of 15 days from each year for a single location, using a list of random numbers. (b) Give one reason why using data from only one location may limit the conclusions Marcus can draw.",
+    "options": null,
+    "correctAnswer": "(a) Number the 184 days of the chosen location for 1987 from 1 to 184; generate random numbers between 1 and 184 (ignoring repeats) until 15 distinct numbers are obtained; select the corresponding days. Repeat the process independently for the 184 days of 2015. (b) Weather varies by location (e.g. coastal vs inland, north vs south), so conclusions drawn from a single location may not apply to the UK, or the whole data set, as a whole.",
+    "explanation": "Simple random sampling procedure plus a discussion of generalisability.",
+    "topic": "Sampling Methods",
+    "difficulty": "higher",
+    "relatedLocation": null
+  },
+  {
+    "id": 72,
+    "type": "longAnswer",
+    "prompt": "The Daily Mean Temperature at Heathrow in July may be modelled by a normal distribution with mean 16.5C and standard deviation 3.2C. (a) Using this model, find the probability that a randomly selected day in July has a Daily Mean Temperature greater than 20C. (b) Using this model, estimate the number of days in July with a Daily Mean Temperature greater than 20C. In fact, the large data set records 7 such days at Heathrow in July 2015. (c) Comment on the suitability of the model in light of this information.",
+    "options": null,
+    "correctAnswer": "(a) P(T > 20) = P(Z > (20-16.5)/3.2) = P(Z > 1.09) = 0.137 (3 s.f.). (b) 31 times 0.137 = 4.25, so approximately 4 days. (c) The model predicts about 4 days but 7 were observed; since these differ noticeably, the model may not be suitable - it underestimates the number of warm days.",
+    "explanation": "Normal distribution modelling followed by validating the model against real large data set observations.",
+    "topic": "Probability",
+    "difficulty": "higher",
+    "relatedLocation": "Heathrow"
+  },
+  {
+    "id": 73,
+    "type": "longAnswer",
+    "prompt": "Using the large data set, Noor estimates the proportion of days with rain at Leuchars in 2015 to be 0.3. She suggests that the number of days with rain in a 20-day period can be modelled by B(20, 0.3). Give two reasons why this binomial distribution might not be a suitable model.",
+    "options": null,
+    "correctAnswer": "Any two of: the probability of rain is unlikely to be constant across the 20 days, since weather changes with seasons/weather systems; consecutive days are not independent, since rain on one day makes rain the next day more likely; the estimate p = 0.3 is based on the whole of May-October and may not apply to a particular 20-day period.",
+    "explanation": "Critiquing binomial assumptions (constant p, independence) in a weather context.",
+    "topic": "Probability",
+    "difficulty": "higher",
+    "relatedLocation": "Leuchars"
+  },
+  {
+    "id": 74,
+    "type": "longAnswer",
+    "prompt": "Ben calculates the mean Daily Mean Temperature at Leeming using all 184 days from the large data set for 2015. He suggests using this value as an estimate for the annual mean Daily Mean Temperature at Leeming for 2015. (a) Using your knowledge of the large data set, give a reason why these data would not be suitable. (b) State, giving a reason, how you would expect Ben's estimate to differ from the actual annual mean Daily Mean Temperature at Leeming for 2015.",
+    "options": null,
+    "correctAnswer": "(a) The large data set only contains data for May to October, so the sample does not cover the whole year - winter months are missing. (b) The estimate would be higher than the actual annual mean, because May-October are the warmer months and the missing winter months would lower the annual mean.",
+    "explanation": "A frequently examined limitation of the large data set - it is a seasonal (not annual) sample.",
+    "topic": "Averages and Spread",
+    "difficulty": "foundation",
+    "relatedLocation": "Leeming"
+  },
+  {
+    "id": 75,
+    "type": "longAnswer",
+    "prompt": "Lena believes that the south of the UK is warmer than the north of the UK. Using all 184 days from the large data set for 2015 she calculates: Hurn - mean 15.6C, standard deviation 3.9C; Leuchars - mean 12.8C, standard deviation 2.9C. (a) State, giving a reason, whether these statistics support Lena's belief. (b) By comparing the standard deviations, state which location has the more consistent Daily Mean Temperature. (c) Give a reason why using only these two locations may not be sufficient to justify Lena's belief about the whole of the UK.",
+    "options": null,
+    "correctAnswer": "(a) Yes - Hurn is in the south of the UK and Leuchars is in the north (Scotland), and the mean at Hurn (15.6C) is higher than at Leuchars (12.8C), which supports Lena's belief. (b) Leuchars - it has the smaller standard deviation (2.9 is less than 3.9), so its temperatures are less spread out. (c) Only two locations are used, so the result may not generalise - other southern and northern locations may behave differently; more locations (e.g. all five UK stations) should be compared.",
+    "explanation": "Comparing two locations using mean and standard deviation, then critiquing the generalisability of the conclusion.",
+    "topic": "Comparing Distributions",
+    "difficulty": "higher",
+    "relatedLocation": "Hurn, Leuchars"
+  },
+  {
+    "id": 76,
+    "type": "longAnswer",
+    "prompt": "Rahul downloads the large data set for Beijing in 1987 and wishes to calculate the mean Daily Total Rainfall. State two ways in which the data may need to be cleaned before Rahul carries out his calculations.",
+    "options": null,
+    "correctAnswer": "Any two of: values recorded as \"tr\" (trace) must be replaced with a numerical value, usually 0; values recorded as \"n/a\" (missing data) must be removed before calculation; the data should be checked for anomalies/errors (implausible values) which may need removing.",
+    "explanation": "General data cleaning recall question.",
+    "topic": "Outliers and Cleaning Data",
+    "difficulty": "foundation",
+    "relatedLocation": "Beijing"
+  },
+  {
+    "id": 77,
+    "type": "longAnswer",
+    "prompt": "Zara is comparing the weather at Beijing and at Camborne using the large data set. (a) Name two variables that are available for Camborne but are not available for Beijing. (b) Using your knowledge of the large data set, give a reason why Beijing and Camborne might be expected to have very different Daily Total Rainfall patterns.",
+    "options": null,
+    "correctAnswer": "(a) Any two of: Daily Total Sunshine, Daily Mean Total Cloud cover, Daily Mean Visibility, Daily Maximum Relative Humidity, Daily Maximum Gust, Cardinal Wind Direction. (b) Beijing has a continental climate with a summer monsoon season (very heavy rain concentrated in July/August), whereas Camborne is a coastal UK location with rain spread more evenly through the period, driven by Atlantic weather systems.",
+    "explanation": "Tests knowledge of which variables are UK-only, plus a climate-comparison explanation.",
+    "topic": "Comparing Distributions",
+    "difficulty": "higher",
+    "relatedLocation": "Beijing, Camborne"
+  },
+  {
+    "id": 78,
+    "type": "longAnswer",
+    "prompt": "The Daily Total Rainfall at Hurn for 2015 has mean 1.9 mm and median 0.2 mm, with a small number of days having rainfall above 20 mm. (a) Describe the skewness of the distribution. Give a reason for your answer. (b) State, giving a reason, whether you would recommend using the mean and standard deviation or the median and interquartile range to summarise these data.",
+    "options": null,
+    "correctAnswer": "(a) Positive skew - the mean (1.9 mm) is much greater than the median (0.2 mm), because a few very large values pull the mean up. (b) Median and IQR - the data contains outliers/extreme values (days with more than 20 mm) which inflate the mean and standard deviation, whereas the median and IQR are unaffected by them.",
+    "explanation": "Skewness identification and choosing robust summary statistics for skewed data.",
+    "topic": "Averages and Spread",
+    "difficulty": "higher",
+    "relatedLocation": "Hurn"
+  },
+  {
+    "id": 79,
+    "type": "longAnswer",
+    "prompt": "The mean Daily Mean Temperature at Heathrow for the 31 days of May 2015 was 13.1C. The mean Daily Mean Temperature at Heathrow for the 30 days of June 2015 was 16.2C. Calculate the mean Daily Mean Temperature at Heathrow for the 61 days of May and June 2015.",
+    "options": null,
+    "correctAnswer": "Combined mean = (31 times 13.1 + 30 times 16.2) / 61 = (406.1 + 486) / 61 = 892.1/61 = 14.6C (3 s.f.).",
+    "explanation": "Combined mean of two groups - a standard technique using weighted totals rather than simply averaging the two means.",
+    "topic": "Averages and Spread",
+    "difficulty": "foundation",
+    "relatedLocation": "Heathrow"
+  },
+  {
+    "id": 80,
+    "type": "longAnswer",
+    "prompt": "The 184 days for each of Hurn and Leuchars in 2015 are classified according to whether or not any rain fell: Hurn - 68 rain, 116 no rain; Leuchars - 92 rain, 92 no rain (totals: 160 rain, 208 no rain, 368 overall). One of these 368 days is selected at random. (a) Find the probability that the day had rain, given that it was a day at Leuchars. (b) Find the probability that the day was at Hurn, given that it had no rain. (c) Determine whether the events 'the day was at Hurn' and 'the day had rain' are statistically independent.",
+    "options": null,
+    "correctAnswer": "(a) P(rain given Leuchars) = 92/184 = 0.5. (b) P(Hurn given no rain) = 116/208 = 29/52 = 0.558 (3 s.f.). (c) P(rain) = 160/368 = 0.435, but P(rain given Hurn) = 68/184 = 0.370. Since these are not equal, the events are not independent. Equivalently, P(Hurn) times P(rain) = 0.5 times 0.4348 = 0.217, which does not equal 68/368 = 0.185.",
+    "explanation": "Conditional probability and testing statistical independence from a two-way table.",
+    "topic": "Probability",
+    "difficulty": "higher",
+    "relatedLocation": "Hurn, Leuchars"
+  },
+  {
+    "id": 81,
+    "type": "longAnswer",
+    "prompt": "Isla calculates the product moment correlation coefficient between Daily Mean Total Cloud cover and Daily Total Sunshine at Leeming and obtains r = -0.82. (a) Interpret this value of r in context. (b) Isla claims that this proves increased cloud cover causes a reduction in sunshine. Comment on Isla's claim. (c) Suggest how Isla could make better use of the large data set to investigate the relationship between cloud cover and sunshine.",
+    "options": null,
+    "correctAnswer": "(a) There is a strong negative (linear) correlation: days with greater cloud cover tend to have fewer hours of sunshine. (b) Correlation does not prove causation - although here there is a plausible physical mechanism, the value of r alone cannot prove that one variable causes the other. (c) Any one of: use data from more locations; use data from both years (1987 and 2015); use all 184 days rather than a sample.",
+    "explanation": "Correlation interpretation plus the correlation-does-not-imply-causation principle - a very common exam theme.",
+    "topic": "Correlation and Regression",
+    "difficulty": "higher",
+    "relatedLocation": "Leeming"
+  },
+  {
+    "id": 82,
+    "type": "longAnswer",
+    "prompt": "The Daily Mean Temperature at Hurn in August may be modelled by a normal distribution with mean 20C and standard deviation 4C. Use this model to estimate the range of temperatures between the 10th and 90th percentiles.",
+    "options": null,
+    "correctAnswer": "The 10th and 90th percentiles correspond to z = plus or minus 1.2816. Range = 2 times 1.2816 times 4 = 10.3C (3 s.f.). Equivalently, the 90th percentile is 25.1C and the 10th percentile is 14.9C.",
+    "explanation": "Percentile calculation using the normal distribution and inverse normal (z) values.",
+    "topic": "Probability",
+    "difficulty": "higher",
+    "relatedLocation": "Hurn"
+  },
+  {
+    "id": 83,
+    "type": "longAnswer",
+    "prompt": "Oliver models the Daily Mean Wind Speed at Heathrow using a discrete uniform distribution over the values recorded in the large data set. Using all the data for Heathrow in 2015, he finds that his model consistently overestimates the proportion of days with high wind speeds. (a) Suggest an appropriate refinement to Oliver's model. (b) Suggest two ways Oliver could make better use of the large data set to investigate Daily Mean Wind Speed in the UK.",
+    "options": null,
+    "correctAnswer": "(a) Use a non-uniform distribution with probabilities based on the observed frequencies of each wind speed, giving lower probabilities to high wind speeds. (b) Any two of: use data from all five UK locations rather than just Heathrow; use data from both 1987 and 2015; use all 184 days for each location; compare different months to look for seasonal patterns.",
+    "explanation": "Critiquing and refining a discrete uniform model, plus suggestions for making fuller use of the large data set.",
+    "topic": "Probability",
+    "difficulty": "higher",
+    "relatedLocation": "Heathrow"
+  }
+]

@@ -1,0 +1,357 @@
+[
+  {
+    "id": 1,
+    "examSeries": "Sample Assessment Materials (2017)",
+    "paperNumber": 3,
+    "questionNumber": "1",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/QP/Sample%20QP.pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/MS/Sample%20MS.pdf",
+    "yourMarkingCriteria": [
+      "Correctly finds the width/height of the histogram bar using the area-frequency relationship",
+      "Correctly estimates the mean and standard deviation from the grouped table",
+      "Compares the two locations' summary statistics with correct reasoning about their relative position/climate",
+      "Compares the normal model's predicted count with the actual observed count and gives a sensible comment on the model's suitability"
+    ],
+    "topic": "Averages and Spread",
+    "level": "A Level",
+    "totalMarks": 13
+  },
+  {
+    "id": 2,
+    "examSeries": "Sample Assessment Materials (2017)",
+    "paperNumber": 3,
+    "questionNumber": "2",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/QP/Sample%20QP.pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/MS/Sample%20MS.pdf",
+    "yourMarkingCriteria": [
+      "Explains that predicting well outside the given data range is extrapolation and is unreliable",
+      "States that the PMCC only measures the strength of a linear relationship",
+      "Correctly carries out a one-tailed hypothesis test with correct hypotheses, comparison to the critical value, and conclusion in context",
+      "Correctly identifies the plausible location using LDS knowledge, with a valid supporting reason"
+    ],
+    "topic": "Correlation and Regression",
+    "level": "A Level",
+    "totalMarks": 6
+  },
+  {
+    "id": 3,
+    "examSeries": "Sample Assessment Materials (2017)",
+    "paperNumber": 2,
+    "questionNumber": "1",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/QP/Sample%20QP.pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/MS/Sample%20MS.pdf",
+    "yourMarkingCriteria": [
+      "Correctly names the sampling technique used (systematic sampling)",
+      "Uses LDS knowledge to explain why the process might not produce the intended sample size (missing/n-a values in the data)",
+      "Correctly calculates the standard deviation from the given summary statistics"
+    ],
+    "topic": "Sampling Methods",
+    "level": "AS Level",
+    "totalMarks": 4
+  },
+  {
+    "id": 4,
+    "examSeries": "Sample Assessment Materials (2017)",
+    "paperNumber": 2,
+    "questionNumber": "4",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/QP/Sample%20QP.pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/MS/Sample%20MS.pdf",
+    "yourMarkingCriteria": [
+      "Correctly verifies the outlier using the 1.5 x IQR rule",
+      "Gives one valid reason to keep the value and one valid reason to remove it",
+      "Correctly interprets the correlation and the regression gradient in context",
+      "Gives a genuine, specific critique of the sampling method (not just 'small sample') and a genuine suggestion for improvement using real LDS knowledge (multiple locations/months available)"
+    ],
+    "topic": "Outliers and Cleaning Data",
+    "level": "AS Level",
+    "totalMarks": 7
+  },
+  {
+    "id": 5,
+    "examSeries": "Specimen",
+    "paperNumber": 2,
+    "questionNumber": "3",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/QP/Specimen%20QP.pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/MS/Specimen%20MS.pdf",
+    "yourMarkingCriteria": [
+      "Correctly confirms the three points are outliers using the given quartiles",
+      "Correctly describes how removing the outliers would change the correlation",
+      "Uses LDS knowledge to explain why the sample is unlikely to be random (values in a suspicious order)",
+      "Correctly interprets the regression gradient, and correctly identifies the December prediction as invalid extrapolation since the LDS only covers May-October"
+    ],
+    "topic": "Correlation and Regression",
+    "level": "AS Level",
+    "totalMarks": 6
+  },
+  {
+    "id": 6,
+    "examSeries": "Specimen (Mock Set)",
+    "paperNumber": 3,
+    "questionNumber": "2",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/QP/Specimen%20QP.pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/MS/Specimen%20MS.pdf",
+    "yourMarkingCriteria": [
+      "Gives a valid reason from the scatter diagram for why a single linear model may not fit well",
+      "Correctly carries out a one-tailed hypothesis test at the 10% level with hypotheses and conclusion in context",
+      "Correctly identifies the two hottest locations using LDS knowledge",
+      "Gives a valid geographical reason (e.g. latitude/proximity to the equator) for the identification",
+      "Suggests a genuine improvement to how the LDS is used (e.g. daily data from one place rather than monthly means across places)"
+    ],
+    "topic": "Correlation and Regression",
+    "level": "A Level",
+    "totalMarks": 7
+  },
+  {
+    "id": 7,
+    "examSeries": "June 2018",
+    "paperNumber": 3,
+    "questionNumber": "1",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/QP/June%202018%20QP.pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/MS/June%202018%20MS.pdf",
+    "yourMarkingCriteria": [
+      "Correctly writes the discrete uniform distribution over the 9 possible cloud cover values",
+      "Correctly calculates the probability requested using the model",
+      "Compares the model's prediction with the real observed proportion and comments on suitability with valid reasoning",
+      "Suggests a sensible refinement, e.g. a non-uniform distribution based on observed frequencies"
+    ],
+    "topic": "Probability",
+    "level": "A Level",
+    "totalMarks": 5
+  },
+  {
+    "id": 8,
+    "examSeries": "June 2018",
+    "paperNumber": 2,
+    "questionNumber": "4",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/QP/June%202018%20QP.pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/MS/June%202018%20MS.pdf",
+    "yourMarkingCriteria": [
+      "Correctly calculates the mean from the given summary statistics",
+      "Correctly calculates the standard deviation and states the correct units (knots)",
+      "Uses LDS knowledge to suggest a plausible month with valid reasoning (e.g. a windier autumn month)",
+      "Correctly identifies outliers on the box plot and correctly matches the described data set to the right summary statistics using both location and spread"
+    ],
+    "topic": "Averages and Spread",
+    "level": "AS Level",
+    "totalMarks": 8
+  },
+  {
+    "id": 9,
+    "examSeries": "June 2019",
+    "paperNumber": 31,
+    "questionNumber": "2",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/QP/June%202019%20QP%20(Stats).pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/MS/June%202019%20MS%20(Stats).pdf",
+    "yourMarkingCriteria": [
+      "Correctly calculates the IQR and the outlier fences using 1.5 x IQR",
+      "Correctly completes the box plot with whiskers and any outliers placed correctly",
+      "Uses LDS seasonal knowledge (May-October pattern) to give a plausible month for the coldest values, with reasoning",
+      "Correctly shows the standard deviation calculation from the given summary statistics",
+      "Correctly finds the spread between the 10th and 90th percentiles using the normal model",
+      "Names two genuinely unsuitable LDS variables for a normal model, each with a valid supporting reason (e.g. categorical or heavily skewed)"
+    ],
+    "topic": "Outliers and Cleaning Data",
+    "level": "A Level",
+    "totalMarks": 11
+  },
+  {
+    "id": 10,
+    "examSeries": "June 2019",
+    "paperNumber": 31,
+    "questionNumber": "4",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/QP/June%202019%20QP%20(Stats).pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/MS/June%202019%20MS%20(Stats).pdf",
+    "yourMarkingCriteria": [
+      "Correctly calculates the proportion of days with high cloud cover from all 184 days",
+      "Correctly calculates the probability from the proposed model and uses it to find an expected count",
+      "Compares the model's prediction with the actual observed count and comments on suitability",
+      "Correctly calculates the conditional proportion and uses it to argue that the independence assumption fails"
+    ],
+    "topic": "Probability",
+    "level": "A Level",
+    "totalMarks": 9
+  },
+  {
+    "id": 11,
+    "examSeries": "June 2019",
+    "paperNumber": 21,
+    "questionNumber": "4",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/QP/June%202019%20QP%20(Stats).pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/MS/June%202019%20MS%20(Stats).pdf",
+    "yourMarkingCriteria": [
+      "Explains that trace values must be cleaned (converted to a number) before calculation",
+      "Correctly estimates the upper quartile using linear interpolation",
+      "Correctly estimates the standard deviation from the grouped data",
+      "States the midpoint assumption correctly, explains why it fails for skewed rainfall data, and comments sensibly on the resulting estimate"
+    ],
+    "topic": "Outliers and Cleaning Data",
+    "level": "AS Level",
+    "totalMarks": 8
+  },
+  {
+    "id": 12,
+    "examSeries": "June 2020",
+    "paperNumber": 21,
+    "questionNumber": "2",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/QP/June%202020%20QP%20(Stats).pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/MS/June%202020%20MS%20(Stats).pdf",
+    "yourMarkingCriteria": [
+      "Correctly states the range of true values a rounded reading of 0 could represent",
+      "Correctly shows the circled point is an outlier using the given quartiles",
+      "Correctly interprets the correlation between visibility and humidity in context (mist/fog explanation)",
+      "Correctly identifies the unlabelled variable using LDS knowledge"
+    ],
+    "topic": "Correlation and Regression",
+    "level": "AS Level",
+    "totalMarks": 5
+  },
+  {
+    "id": 13,
+    "examSeries": "October 2020",
+    "paperNumber": 31,
+    "questionNumber": "2",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/QP/October%202020%20QP%20(Stats).pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/MS/October%202020%20MS%20(Stats).pdf",
+    "yourMarkingCriteria": [
+      "Correctly describes the correlation shown on the scatter diagram (negative)",
+      "Correctly identifies a plausible variable for the y-axis using LDS knowledge, with correct units for that variable",
+      "Correctly carries out a two-tailed hypothesis test at 5% with hypotheses, critical value, and conclusion in context",
+      "Gives a sensible, reasoned prediction based on the negative correlation and the humidity/fog association"
+    ],
+    "topic": "Correlation and Regression",
+    "level": "A Level",
+    "totalMarks": 7
+  },
+  {
+    "id": 14,
+    "examSeries": "November 2021",
+    "paperNumber": 21,
+    "questionNumber": "3",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/QP/November%202021%20QP%20(Stats).pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/MS/November%202021%20MS%20(Stats).pdf",
+    "yourMarkingCriteria": [
+      "Correctly identifies the sampling technique used",
+      "Correctly names a genuine qualitative LDS variable with the right number of categories",
+      "Draws a correct, simple inference from the given frequencies"
+    ],
+    "topic": "Sampling Methods",
+    "level": "AS Level",
+    "totalMarks": 4
+  },
+  {
+    "id": 15,
+    "examSeries": "October 2021",
+    "paperNumber": 31,
+    "questionNumber": "3",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/QP/October%202021%20QP%20(Stats).pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/MS/October%202021%20MS%20(Stats).pdf",
+    "yourMarkingCriteria": [
+      "States the correct units of the original (uncoded) variable",
+      "Correctly reverses the coding to recover the mean of the original variable",
+      "Correctly finds the standard deviation, recognising that subtracting a constant leaves it unchanged",
+      "Correctly assigns the three cardinal wind directions to the three stations using their relative north-south positions and the wind circulation rule"
+    ],
+    "topic": "Averages and Spread",
+    "level": "A Level",
+    "totalMarks": 8
+  },
+  {
+    "id": 16,
+    "examSeries": "June 2022",
+    "paperNumber": 31,
+    "questionNumber": "3",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/QP/June%202022%20QP%20(Stats).pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/MS/June%202022%20MS%20(Stats).pdf",
+    "yourMarkingCriteria": [
+      "States the correct convention for recording a tiny non-zero rainfall amount (the trace convention)",
+      "Correctly calculates the mean and standard deviation from the given n, sum of r and sum of r-squared",
+      "Correctly compares the two locations' means with valid reasoning about which is north and which is south",
+      "Gives a valid reason why a binomial model is questionable for dry days in a consecutive period (non-constant probability or lack of independence)"
+    ],
+    "topic": "Outliers and Cleaning Data",
+    "level": "A Level",
+    "totalMarks": 7
+  },
+  {
+    "id": 17,
+    "examSeries": "June 2022",
+    "paperNumber": 21,
+    "questionNumber": "4",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/QP/June%202022%20QP%20(Stats).pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/MS/June%202022%20MS%20(Stats).pdf",
+    "yourMarkingCriteria": [
+      "Gives a plausible median value consistent with typical UK pressure readings",
+      "Gives a plausible range value consistent with realistic day-to-day pressure variation",
+      "Justifies both values using general LDS familiarity rather than an arbitrary guess"
+    ],
+    "topic": "Large Data Set - Context",
+    "level": "AS Level",
+    "totalMarks": 2
+  },
+  {
+    "id": 18,
+    "examSeries": "June 2023",
+    "paperNumber": 31,
+    "questionNumber": "3",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/QP/June%202023%20QP%20(Stats).pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/MS/June%202023%20MS%20(Stats).pdf",
+    "yourMarkingCriteria": [
+      "Correctly explains how trace rainfall values need to be cleaned before calculation (typically replaced with 0)",
+      "Correctly calculates the mean and standard deviation from the given summary statistics",
+      "Explains that the LDS only covers May-October, so cannot fairly estimate an annual mean",
+      "States, with a reason, the correct direction the estimate would differ from the true annual figure"
+    ],
+    "topic": "Outliers and Cleaning Data",
+    "level": "A Level",
+    "totalMarks": 7
+  },
+  {
+    "id": 19,
+    "examSeries": "June 2023",
+    "paperNumber": 21,
+    "questionNumber": "2",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/QP/June%202023%20QP%20(Stats).pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/MS/June%202023%20MS%20(Stats).pdf",
+    "yourMarkingCriteria": [
+      "Correctly describes the correlation shown on the single-month scatter diagram",
+      "Correctly interprets what the full 184-day scatter diagram shows about the relationship across the whole period",
+      "States a plausible pressure value for which interpolation would be valid",
+      "Explains that the Beaufort wind-speed classification is qualitative, so a linear relationship with temperature is not meaningful"
+    ],
+    "topic": "Correlation and Regression",
+    "level": "AS Level",
+    "totalMarks": 4
+  },
+  {
+    "id": 20,
+    "examSeries": "June 2024",
+    "paperNumber": 31,
+    "questionNumber": "3",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/QP/June%202024%20QP%20(Stats).pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/Paper-3/MS/June%202024%20MS%20(Stats).pdf",
+    "yourMarkingCriteria": [
+      "Correctly identifies the variable Ming likely selected, using knowledge of which variables Perth records and their typical values",
+      "Correctly calculates the mean and standard deviation from the given n, sum of x and sum of x-squared",
+      "Suggests a plausible month using Perth's southern hemisphere seasonal pattern, with valid reasoning"
+    ],
+    "topic": "Comparing Distributions",
+    "level": "A Level",
+    "totalMarks": 6
+  },
+  {
+    "id": 21,
+    "examSeries": "June 2024",
+    "paperNumber": 21,
+    "questionNumber": "2",
+    "pdfUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/QP/June%202024%20QP%20(Stats).pdf",
+    "markSchemeUrl": "https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/Edexcel/AS-Paper-2/MS/June%202024%20MS%20(Stats).pdf",
+    "yourMarkingCriteria": [
+      "Correctly identifies which direction category represents North, using knowledge that the prevailing UK wind is south-westerly (so northerly winds are least common)",
+      "Correctly identifies the value 999 as an impossible/anomalous entry",
+      "Gives a valid reason for how it should be treated (removed or treated as missing) before analysis"
+    ],
+    "topic": "Outliers and Cleaning Data",
+    "level": "AS Level",
+    "totalMarks": 3
+  }
+]
