@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../models/past_paper_question.dart';
 import '../services/query_service.dart';
 import 'past_paper_marking_screen.dart';
-import 'pdf_viewer_screen.dart';
 
 class PastPapersScreen extends StatefulWidget {
   const PastPapersScreen({super.key});
@@ -28,6 +28,16 @@ class _PastPapersScreenState extends State<PastPapersScreen> {
       _pastPapers = papers;
       _isLoading = false;
     });
+  }
+
+  Future<void> _openInBrowser(String url) async {
+    final uri = Uri.parse(url);
+    if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Could not open $url')),
+      );
+    }
   }
 
   @override
@@ -76,33 +86,13 @@ class _PastPapersScreenState extends State<PastPapersScreen> {
                           IconButton(
                             icon: const Icon(Icons.picture_as_pdf),
                             tooltip: 'Question paper',
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => PdfViewerScreen(
-                                    url: paper.pdfUrl,
-                                    title: '${paper.examSeries} — Q${paper.questionNumber}',
-                                  ),
-                                ),
-                              );
-                            },
+                            onPressed: () => _openInBrowser(paper.pdfUrl),
                           ),
                           if (paper.markSchemeUrl != null)
                             IconButton(
                               icon: const Icon(Icons.checklist),
                               tooltip: 'Mark scheme',
-                              onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => PdfViewerScreen(
-                                      url: paper.markSchemeUrl!,
-                                      title: '${paper.examSeries} — Q${paper.questionNumber} (Mark Scheme)',
-                                    ),
-                                  ),
-                                );
-                              },
+                              onPressed: () => _openInBrowser(paper.markSchemeUrl!),
                             ),
                         ],
                       ),
