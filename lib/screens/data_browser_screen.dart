@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../state/data_browser_provider.dart';
 import '../widgets/sort_filter_bar.dart';
+import 'lds_import_screen.dart';
 import 'record_detail_screen.dart';
 
 class DataBrowserScreen extends StatefulWidget {
@@ -22,7 +23,24 @@ class _DataBrowserScreenState extends State<DataBrowserScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Large Data Set')),
+      appBar: AppBar(
+        title: const Text('Large Data Set'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.upload_file),
+            tooltip: 'Import data',
+            onPressed: () async {
+              await Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const LdsImportScreen()),
+              );
+              if (context.mounted) {
+                context.read<DataBrowserProvider>().loadRecords();
+              }
+            },
+          ),
+        ],
+      ),
       body: Column(
         children: [
           const SortFilterBar(),
@@ -34,7 +52,43 @@ class _DataBrowserScreenState extends State<DataBrowserScreen> {
                 }
 
                 if (provider.records.isEmpty) {
-                  return const Center(child: Text('No records found.'));
+                  return Center(
+                    child: Padding(
+                      padding: const EdgeInsets.all(24),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          const Icon(Icons.table_chart_outlined, size: 48, color: Colors.grey),
+                          const SizedBox(height: 12),
+                          const Text(
+                            'No Large Data Set imported yet',
+                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                            textAlign: TextAlign.center,
+                          ),
+                          const SizedBox(height: 8),
+                          const Text(
+                            'This app doesn\'t ship with a copy of Pearson\'s Large Data Set. '
+                            'Download it from Pearson and import it to browse and practice with your data.',
+                            textAlign: TextAlign.center,
+                          ),
+                          const SizedBox(height: 16),
+                          ElevatedButton.icon(
+                            onPressed: () async {
+                              await Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => const LdsImportScreen()),
+                              );
+                              if (context.mounted) {
+                                context.read<DataBrowserProvider>().loadRecords();
+                              }
+                            },
+                            icon: const Icon(Icons.upload_file),
+                            label: const Text('Import Large Data Set'),
+                          ),
+                        ],
+                      ),
+                    ),
+                  );
                 }
 
                 return ListView.builder(

@@ -39,7 +39,8 @@ dependencies:
   provider: ^6.1.2
   url_launcher: ^6.3.1
   shared_preferences: ^2.3.3
-
+  file_picker: ^12.1.2
+  excel_plus: ^2.15.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -77,7 +78,6 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   assets:
-    - lib/data/lds_data.json
     - lib/data/question_bank.json
     - lib/data/past_papers.json
     - assets/app_icon.png

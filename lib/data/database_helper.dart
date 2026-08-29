@@ -1,6 +1,5 @@
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
-import '../models/lds_record.dart';
 import '../models/question.dart';
 import '../models/past_paper_question.dart';
 import 'dart:convert';
@@ -92,19 +91,8 @@ class DatabaseHelper {
         totalMarksAvailable INTEGER
       )
     ''');
-    await _seedLdsData(db);
     await _seedQuestionBankData(db);
     await _seedPastPapersData(db);
-  }
-
-  Future<void> _seedLdsData(Database db) async {
-    final String jsonString = await rootBundle.loadString('lib/data/lds_data.json');
-    final List<dynamic> jsonList = jsonDecode(jsonString);
-
-    for (final item in jsonList) {
-      final record = LdsRecord.fromJson(item);
-      await db.insert('lds_records', record.toMap());
-    }
   }
 
   Future<void> _seedQuestionBankData(Database db) async {

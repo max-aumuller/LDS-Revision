@@ -1,3 +1,4 @@
+import 'package:sqflite/sqflite.dart';
 import '../data/database_helper.dart';
 import '../models/lds_record.dart';
 import '../models/question.dart';
@@ -6,6 +7,12 @@ import '../models/past_paper_question.dart';
 import '../models/progress_entry.dart';
 
 class QueryService {
+  Future<bool> hasAnyRecords() async {
+    final db = await DatabaseHelper.instance.database;
+    final result = Sqflite.firstIntValue(await db.rawQuery('SELECT COUNT(*) FROM lds_records'));
+    return (result ?? 0) > 0;
+  }
+
   Future<List<LdsRecord>> getAllRecords() async {
     final db = await DatabaseHelper.instance.database;
     final List<Map<String, dynamic>> maps = await db.query('lds_records');
@@ -81,6 +88,21 @@ class QueryService {
     );
 
     return maps.map((map) => LdsRecord.fromJson(map)).toList();
+  }
+
+  /// Deletes every existing lds_records row and inserts [records] in its
+  /// place, atomically, so re-importing an updated dataset overwrites
+  /// cleanly instead of duplicating rows.
+  Future<void> replaceAllRecords(List<LdsRecord> records) async {
+    final db = await DatabaseHelper.instance.database;
+    await db.transaction((txn) async {
+      await txn.delete('lds_records');
+      final batch = txn.batch();
+      for (final record in records) {
+        batch.insert('lds_records', record.toMap());
+      }
+      await batch.commit(noResult: true);
+    });
   }
 
   Future<List<Question>> getQuestions({List<String>? topics, int? limit}) async {
