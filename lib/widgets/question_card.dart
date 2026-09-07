@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/question.dart';
 import '../theme.dart';
 
+
 class QuestionCard extends StatelessWidget {
   final Question question;
   final String? selectedAnswer;
@@ -31,18 +32,21 @@ class QuestionCard extends StatelessWidget {
   }
 
   Widget _buildChoiceQuestion(BuildContext context) {
+    final semanticColors = context.semanticColors;
+    final errorContainer = Theme.of(context).colorScheme.errorContainer;
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(question.prompt, style: Theme.of(context).textTheme.titleLarge),
-        const SizedBox(height: 16),
+        const SizedBox(height: AppSpacing.lg),
         ...?question.options?.map((option) {
           Color? tileColor;
           if (hasAnswered) {
             if (option == question.correctAnswer) {
-              tileColor = AppTheme.correctColor.withValues(alpha: 0.15);
+              tileColor = semanticColors.successContainer;
             } else if (option == selectedAnswer) {
-              tileColor = AppTheme.incorrectColor.withValues(alpha: 0.15);
+              tileColor = errorContainer;
             }
           }
 
@@ -55,10 +59,13 @@ class QuestionCard extends StatelessWidget {
           );
         }),
         if (hasAnswered) ...[
-          const SizedBox(height: 16),
+          const SizedBox(height: AppSpacing.lg),
           Text(
             question.explanation,
-            style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey.shade700),
+            style: TextStyle(
+              fontStyle: FontStyle.italic,
+              color: Theme.of(context).colorScheme.onSurfaceVariant,
+            ),
           ),
         ],
       ],
@@ -70,7 +77,7 @@ class QuestionCard extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(question.prompt, style: Theme.of(context).textTheme.titleLarge),
-        const SizedBox(height: 16),
+        const SizedBox(height: AppSpacing.lg),
         if (!isRevealed)
           ElevatedButton(
             onPressed: onReveal,
@@ -78,14 +85,17 @@ class QuestionCard extends StatelessWidget {
           ),
         if (isRevealed) ...[
           Text('Model Answer:', style: Theme.of(context).textTheme.titleMedium),
-          const SizedBox(height: 8),
+          const SizedBox(height: AppSpacing.sm),
           Text(question.correctAnswer),
-          const SizedBox(height: 16),
+          const SizedBox(height: AppSpacing.lg),
           Text(
             question.explanation,
-            style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey.shade700),
+            style: TextStyle(
+              fontStyle: FontStyle.italic,
+              color: Theme.of(context).colorScheme.onSurfaceVariant,
+            ),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: AppSpacing.lg),
           if (!hasAnswered)
             Row(
               children: [
@@ -95,7 +105,7 @@ class QuestionCard extends StatelessWidget {
                     child: const Text('I got this right'),
                   ),
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: AppSpacing.sm),
                 Expanded(
                   child: OutlinedButton(
                     onPressed: () => onSelfMark(false),

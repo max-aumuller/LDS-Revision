@@ -4,7 +4,6 @@ import 'home_screen.dart';
 import 'quiz_mode_select_screen.dart';
 import 'past_papers_screen.dart';
 import 'progress_screen.dart';
-import '../theme.dart';
 
 class MainNavigationShell extends StatefulWidget {
   const MainNavigationShell({super.key});
@@ -42,8 +41,8 @@ class _MainNavigationShellState extends State<MainNavigationShell> {
           });
         },
         type: BottomNavigationBarType.fixed,
-        selectedItemColor: AppTheme.primaryColor,
-        unselectedItemColor: Colors.grey,
+        selectedItemColor: Theme.of(context).colorScheme.primary,
+        unselectedItemColor: Theme.of(context).colorScheme.onSurfaceVariant,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.bar_chart), label: 'Data'),

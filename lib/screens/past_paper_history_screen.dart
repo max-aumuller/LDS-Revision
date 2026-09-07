@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../state/progress_provider.dart';
+import '../theme.dart';
 
 class PastPaperHistoryScreen extends StatelessWidget {
   const PastPaperHistoryScreen({super.key});
@@ -16,7 +17,7 @@ class PastPaperHistoryScreen extends StatelessWidget {
           if (history.isEmpty) {
             return const Center(
               child: Padding(
-                padding: EdgeInsets.all(24.0),
+                padding: EdgeInsets.all(AppSpacing.xl),
                 child: Text(
                   'No past paper attempts yet.',
                   textAlign: TextAlign.center,
@@ -26,7 +27,7 @@ class PastPaperHistoryScreen extends StatelessWidget {
           }
 
           return ListView.builder(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(AppSpacing.lg),
             itemCount: history.length,
             itemBuilder: (context, index) {
               final PastPaperAttempt attempt = history[index];

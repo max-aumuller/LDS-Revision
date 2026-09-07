@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../models/past_paper_question.dart';
 import '../services/query_service.dart';
+import '../theme.dart';
 import 'past_paper_marking_screen.dart';
 
 class PastPapersScreen extends StatefulWidget {
@@ -52,6 +53,11 @@ class _PastPapersScreenState extends State<PastPapersScreen> {
                   itemCount: _pastPapers.length,
                   itemBuilder: (context, index) {
                     final paper = _pastPapers[index];
+                    final colorScheme = Theme.of(context).colorScheme;
+                    final isALevel = paper.level == 'A Level';
+                    final chipColor = isALevel ? colorScheme.primaryContainer : colorScheme.secondaryContainer;
+                    final onChipColor = isALevel ? colorScheme.onPrimaryContainer : colorScheme.onSecondaryContainer;
+
                     return ListTile(
                       title: Text('${paper.examSeries} — Paper ${paper.paperNumber}, Q${paper.questionNumber}'),
                       subtitle: Column(
@@ -60,23 +66,27 @@ class _PastPapersScreenState extends State<PastPapersScreen> {
                           Row(
                             children: [
                               Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                                padding: const EdgeInsets.symmetric(horizontal: AppSpacing.sm, vertical: AppSpacing.xxs),
                                 decoration: BoxDecoration(
-                                  color: paper.level == 'A Level' ? Colors.deepPurple.shade100 : Colors.teal.shade100,
-                                  borderRadius: BorderRadius.circular(4),
+                                  color: chipColor,
+                                  borderRadius: BorderRadius.circular(6),
                                 ),
                                 child: Text(
                                   paper.level,
-                                  style: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold),
+                                  style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: onChipColor),
                                 ),
                               ),
-                              const SizedBox(width: 8),
+                              const SizedBox(width: AppSpacing.sm),
                               Expanded(child: Text(paper.topic)),
                             ],
                           ),
-                          const Text(
+                          Text(
                             'Tap for marking criteria',
-                            style: TextStyle(fontSize: 11, fontStyle: FontStyle.italic),
+                            style: TextStyle(
+                              fontSize: 11,
+                              fontStyle: FontStyle.italic,
+                              color: colorScheme.onSurfaceVariant,
+                            ),
                           ),
                         ],
                       ),

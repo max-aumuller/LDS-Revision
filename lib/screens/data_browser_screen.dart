@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../state/data_browser_provider.dart';
+import '../theme.dart';
 import '../widgets/sort_filter_bar.dart';
 import 'lds_import_screen.dart';
 import 'record_detail_screen.dart';
@@ -54,24 +55,28 @@ class _DataBrowserScreenState extends State<DataBrowserScreen> {
                 if (provider.records.isEmpty) {
                   return Center(
                     child: Padding(
-                      padding: const EdgeInsets.all(24),
+                      padding: const EdgeInsets.all(AppSpacing.xl),
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          const Icon(Icons.table_chart_outlined, size: 48, color: Colors.grey),
-                          const SizedBox(height: 12),
+                          Icon(
+                            Icons.table_chart_outlined,
+                            size: 48,
+                            color: Theme.of(context).colorScheme.onSurfaceVariant,
+                          ),
+                          const SizedBox(height: AppSpacing.md),
                           const Text(
                             'No Large Data Set imported yet',
                             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                             textAlign: TextAlign.center,
                           ),
-                          const SizedBox(height: 8),
+                          const SizedBox(height: AppSpacing.sm),
                           const Text(
                             'This app doesn\'t ship with a copy of Pearson\'s Large Data Set. '
                             'Download it from Pearson and import it to browse and practice with your data.',
                             textAlign: TextAlign.center,
                           ),
-                          const SizedBox(height: 16),
+                          const SizedBox(height: AppSpacing.lg),
                           ElevatedButton.icon(
                             onPressed: () async {
                               await Navigator.push(

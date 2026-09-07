@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../state/quiz_provider.dart';
+import '../theme.dart';
 import '../widgets/question_card.dart';
 import 'results_screen.dart';
 
@@ -23,13 +24,13 @@ class QuestionScreen extends StatelessWidget {
             actions: [
               if (quizProvider.isExamMode)
                 Padding(
-                  padding: const EdgeInsets.only(right: 16.0),
+                  padding: const EdgeInsets.only(right: AppSpacing.lg),
                   child: Center(
                     child: Text(
                       quizProvider.timeExpired ? 'Time up!' : _formatTime(quizProvider.secondsRemaining),
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        color: quizProvider.timeExpired ? Colors.red : null,
+                        color: quizProvider.timeExpired ? Theme.of(context).colorScheme.error : null,
                       ),
                     ),
                   ),
@@ -42,7 +43,7 @@ class QuestionScreen extends StatelessWidget {
             ],
           ),
           body: Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(AppSpacing.lg),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -74,7 +75,7 @@ class QuestionScreen extends StatelessWidget {
                           child: const Text('Previous'),
                         ),
                       ),
-                      const SizedBox(width: 12),
+                      const SizedBox(width: AppSpacing.md),
                       Expanded(
                         child: ElevatedButton(
                           onPressed: quizProvider.isLastQuestion ? null : quizProvider.nextQuestion,

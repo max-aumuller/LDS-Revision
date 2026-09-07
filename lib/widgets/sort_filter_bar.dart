@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../state/data_browser_provider.dart';
+import '../theme.dart';
 
 class SortFilterBar extends StatefulWidget {
   const SortFilterBar({super.key});
@@ -19,7 +20,7 @@ class _SortFilterBarState extends State<SortFilterBar> {
     return Consumer<DataBrowserProvider>(
       builder: (context, provider, child) {
         return Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(AppSpacing.sm),
           child: Column(
             children: [
               Row(
@@ -46,7 +47,7 @@ class _SortFilterBarState extends State<SortFilterBar> {
                     icon: Icon(provider.ascending ? Icons.arrow_upward : Icons.arrow_downward),
                     onPressed: () => provider.sortBy(provider.sortField),
                   ),
-                  const SizedBox(width: 8),
+                  const SizedBox(width: AppSpacing.sm),
                   DropdownButton<String?>(
                     value: provider.selectedLocation,
                     hint: const Text('All Locations'),
@@ -94,7 +95,7 @@ class _SortFilterBarState extends State<SortFilterBar> {
                       decoration: const InputDecoration(hintText: 'Min'),
                     ),
                   ),
-                  const SizedBox(width: 8),
+                  const SizedBox(width: AppSpacing.sm),
                   SizedBox(
                     width: 60,
                     child: TextField(

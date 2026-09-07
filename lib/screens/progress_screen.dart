@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../state/progress_provider.dart';
+import '../theme.dart';
 import '../widgets/stat_tile.dart';
 import 'past_paper_history_screen.dart';
 
@@ -33,7 +34,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
           if (progressProvider.totalAnswered == 0 && progressProvider.pastPapersAttempted == 0) {
             return const Center(
               child: Padding(
-                padding: EdgeInsets.all(24.0),
+                padding: EdgeInsets.all(AppSpacing.xl),
                 child: Text(
                   'No attempts yet. Go answer some questions or try a past paper!',
                   textAlign: TextAlign.center,
@@ -43,7 +44,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
           }
 
           return ListView(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(AppSpacing.lg),
             children: [
               Row(
                 children: [
@@ -53,7 +54,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
                       value: '${progressProvider.overallPercentage.toStringAsFixed(0)}%',
                     ),
                   ),
-                  const SizedBox(width: 8),
+                  const SizedBox(width: AppSpacing.sm),
                   Expanded(
                     child: StatTile(
                       label: 'Questions Answered',
@@ -62,7 +63,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
                   ),
                 ],
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: AppSpacing.sm),
               Row(
                 children: [
                   Expanded(
@@ -71,7 +72,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
                       value: '${progressProvider.pastPapersAttempted}',
                     ),
                   ),
-                  const SizedBox(width: 8),
+                  const SizedBox(width: AppSpacing.sm),
                   Expanded(
                     child: StatTile(
                       label: 'Past Paper Average',
@@ -82,7 +83,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
                   ),
                 ],
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: AppSpacing.sm),
               Card(
                 child: ListTile(
                   leading: const Icon(Icons.history),
@@ -95,9 +96,9 @@ class _ProgressScreenState extends State<ProgressScreen> {
                   ),
                 ),
               ),
-              const SizedBox(height: 24),
+              const SizedBox(height: AppSpacing.xl),
               Text('Weakest Topics', style: Theme.of(context).textTheme.titleLarge),
-              const SizedBox(height: 8),
+              const SizedBox(height: AppSpacing.sm),
               ...progressProvider.weakestTopics.map((entry) {
                 return Card(
                   child: ListTile(

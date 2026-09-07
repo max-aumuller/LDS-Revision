@@ -28,6 +28,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'LDS Revision',
       theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: ThemeMode.system,
       home: const SplashScreen(),
     );
   }

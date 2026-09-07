@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import '../models/past_paper_question.dart';
-import '../services/query_service.dart';
 import '../models/progress_entry.dart';
+import '../services/query_service.dart';
+import '../theme.dart';
 
 class PastPaperMarkingScreen extends StatefulWidget {
   final PastPaperQuestion pastPaper;
@@ -51,7 +52,7 @@ class _PastPaperMarkingScreenState extends State<PastPaperMarkingScreen> {
         title: Text('${widget.pastPaper.examSeries} — Q${widget.pastPaper.questionNumber}'),
       ),
       body: ListView(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(AppSpacing.lg),
         children: [
           ...List.generate(widget.pastPaper.yourMarkingCriteria.length, (index) {
             return CheckboxListTile(
@@ -64,9 +65,9 @@ class _PastPaperMarkingScreenState extends State<PastPaperMarkingScreen> {
               },
             );
           }),
-          const SizedBox(height: 24),
+          const SizedBox(height: AppSpacing.xl),
           const Divider(),
-          const SizedBox(height: 16),
+          const SizedBox(height: AppSpacing.lg),
           if (_hasSubmitted)
             const Center(child: Text('Result saved.', style: TextStyle(fontStyle: FontStyle.italic)))
           else ...[
@@ -74,7 +75,7 @@ class _PastPaperMarkingScreenState extends State<PastPaperMarkingScreen> {
               'How many marks out of ${widget.pastPaper.totalMarks} did you score?',
               style: Theme.of(context).textTheme.titleMedium,
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: AppSpacing.sm),
             Row(
               children: [
                 Expanded(
@@ -86,7 +87,7 @@ class _PastPaperMarkingScreenState extends State<PastPaperMarkingScreen> {
                     ),
                   ),
                 ),
-                const SizedBox(width: 12),
+                const SizedBox(width: AppSpacing.md),
                 ElevatedButton(
                   onPressed: _submitMarks,
                   child: const Text('Submit'),

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../state/quiz_provider.dart';
-import '../state/progress_provider.dart';
 import '../services/query_service.dart';
+import '../state/progress_provider.dart';
+import '../state/quiz_provider.dart';
+import '../theme.dart';
 import 'question_screen.dart';
 
 class QuizModeSelectScreen extends StatefulWidget {
@@ -51,12 +52,12 @@ class _QuizModeSelectScreenState extends State<QuizModeSelectScreen> {
     return Scaffold(
       appBar: AppBar(title: const Text('Quiz')),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(AppSpacing.lg),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             const Text('Choose how you want to practice:'),
-            const SizedBox(height: 12),
+            const SizedBox(height: AppSpacing.md),
             SwitchListTile(
               title: const Text('Exam Mode (timed, feedback at the end)'),
               value: _examMode,
@@ -68,7 +69,7 @@ class _QuizModeSelectScreenState extends State<QuizModeSelectScreen> {
             ),
             if (_examMode)
               Padding(
-                padding: const EdgeInsets.only(bottom: 12.0),
+                padding: const EdgeInsets.only(bottom: AppSpacing.md),
                 child: TextField(
                   controller: _extraTimeController,
                   keyboardType: TextInputType.number,
@@ -78,7 +79,7 @@ class _QuizModeSelectScreenState extends State<QuizModeSelectScreen> {
                   ),
                 ),
               ),
-            const SizedBox(height: 12),
+            const SizedBox(height: AppSpacing.md),
 
             ElevatedButton(
               onPressed: () {
@@ -92,7 +93,7 @@ class _QuizModeSelectScreenState extends State<QuizModeSelectScreen> {
               },
               child: const Text('All Topics (Random)'),
             ),
-            const SizedBox(height: 12),
+            const SizedBox(height: AppSpacing.md),
 
             ElevatedButton(
               onPressed: () {
@@ -107,10 +108,10 @@ class _QuizModeSelectScreenState extends State<QuizModeSelectScreen> {
               },
               child: const Text('Focus on Weakest Topics'),
             ),
-            const SizedBox(height: 24),
+            const SizedBox(height: AppSpacing.xl),
 
             const Text('Or pick a specific topic:'),
-            const SizedBox(height: 8),
+            const SizedBox(height: AppSpacing.sm),
             DropdownButton<String>(
               value: _selectedTopic,
               isExpanded: true,
@@ -124,7 +125,7 @@ class _QuizModeSelectScreenState extends State<QuizModeSelectScreen> {
                 });
               },
             ),
-            const SizedBox(height: 12),
+            const SizedBox(height: AppSpacing.md),
             ElevatedButton(
               onPressed: _selectedTopic == null
                   ? null

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/lds_record.dart';
+import '../theme.dart';
 
 class RecordDetailScreen extends StatelessWidget {
   final LdsRecord record;
@@ -11,7 +12,7 @@ class RecordDetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('${record.location} — ${record.date}')),
       body: ListView(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(AppSpacing.lg),
         children: [
           _buildRow('Year', record.year.toString()),
           _buildRow('Mean Temperature', '${record.dailyMeanTemp ?? "n/a"} °C'),
@@ -33,7 +34,7 @@ class RecordDetailScreen extends StatelessWidget {
 
   Widget _buildRow(String label, String value) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      padding: const EdgeInsets.symmetric(vertical: AppSpacing.sm),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

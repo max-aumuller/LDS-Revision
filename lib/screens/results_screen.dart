@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../state/quiz_provider.dart';
+import '../theme.dart';
 
 class ResultsScreen extends StatelessWidget {
   const ResultsScreen({super.key});
@@ -15,7 +16,7 @@ class ResultsScreen extends StatelessWidget {
           appBar: AppBar(title: const Text('Results')),
           body: Center(
             child: Padding(
-              padding: const EdgeInsets.all(24.0),
+              padding: const EdgeInsets.all(AppSpacing.xl),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -24,7 +25,7 @@ class ResultsScreen extends StatelessWidget {
                       'Score not in timed condition',
                       style: Theme.of(context).textTheme.bodyMedium,
                     ),
-                    const SizedBox(height: 4),
+                    const SizedBox(height: AppSpacing.xs),
                     Text(
                       '${quizProvider.finalScorePercentage.toStringAsFixed(0)}%',
                       style: Theme.of(context).textTheme.headlineSmall,
@@ -38,14 +39,14 @@ class ResultsScreen extends StatelessWidget {
                         'Extra time taken beyond the limit: ${_formatExtraTime(quizProvider.extraTimeTakenSeconds!)}',
                         style: Theme.of(context).textTheme.bodyMedium,
                       ),
-                    const SizedBox(height: 24),
+                    const SizedBox(height: AppSpacing.xl),
                     const Divider(),
-                    const SizedBox(height: 24),
+                    const SizedBox(height: AppSpacing.xl),
                     Text(
                       'Score under timed conditions',
                       style: Theme.of(context).textTheme.bodyMedium,
                     ),
-                    const SizedBox(height: 4),
+                    const SizedBox(height: AppSpacing.xs),
                     Text(
                       '${quizProvider.timedScorePercentage!.toStringAsFixed(0)}%',
                       style: Theme.of(context).textTheme.displayMedium,
@@ -63,13 +64,13 @@ class ResultsScreen extends StatelessWidget {
                       '${quizProvider.finalScorePercentage.toStringAsFixed(0)}%',
                       style: Theme.of(context).textTheme.displayMedium,
                     ),
-                    const SizedBox(height: 8),
+                    const SizedBox(height: AppSpacing.sm),
                     Text(
                       '${quizProvider.correctCount} out of ${quizProvider.totalQuestions} correct',
                       style: Theme.of(context).textTheme.titleMedium,
                     ),
                   ],
-                  const SizedBox(height: 32),
+                  const SizedBox(height: AppSpacing.xxl),
                   ElevatedButton(
                     onPressed: () {
                       Navigator.popUntil(context, (route) => route.isFirst);

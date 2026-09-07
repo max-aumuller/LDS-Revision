@@ -5,6 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../services/lds_import_service.dart';
 import '../services/query_service.dart';
+import '../theme.dart';
 
 // TODO: confirm this is still the correct page before shipping — Pearson
 // reorganises its qualifications site periodically.
@@ -139,7 +140,7 @@ class _LdsImportScreenState extends State<LdsImportScreen> {
     return Scaffold(
       appBar: AppBar(title: const Text('Import Large Data Set')),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(AppSpacing.lg),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -148,28 +149,32 @@ class _LdsImportScreenState extends State<LdsImportScreen> {
               'Download your own copy from Pearson\'s official website, then import '
               'the file here (.xls or .xlsx).',
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: AppSpacing.lg),
             OutlinedButton.icon(
               onPressed: _openPearsonPage,
               icon: const Icon(Icons.open_in_new),
               label: const Text('Open Pearson\'s Large Data Set page'),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: AppSpacing.lg),
             Card(
               child: Padding(
-                padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(AppSpacing.lg),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text('On that page:', style: TextStyle(fontWeight: FontWeight.w600)),
-                    const SizedBox(height: 8),
+                    const SizedBox(height: AppSpacing.sm),
                     _instructionStep(1, 'Find "AS and A level Mathematics" and expand "Specification and sample assessments".'),
                     _instructionStep(2, 'In the list that appears, find "AS and A level Mathematics Data Set" and download it.'),
                     _instructionStep(3, 'Come back to this app and tap "Choose file" below, then select the file you just downloaded.'),
-                    const SizedBox(height: 4),
+                    const SizedBox(height: AppSpacing.xs),
                     RichText(
                       text: TextSpan(
-                        style: const TextStyle(fontSize: 12, fontStyle: FontStyle.italic, color: Colors.black54),
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontStyle: FontStyle.italic,
+                          color: Theme.of(context).colorScheme.onSurfaceVariant,
+                        ),
                         children: [
                           const TextSpan(
                             text: 'If the download is a .xls file and won\'t import, open it in Excel, '
@@ -189,13 +194,13 @@ class _LdsImportScreenState extends State<LdsImportScreen> {
                 ),
               ),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: AppSpacing.lg),
             ElevatedButton.icon(
               onPressed: _status == _ImportStatus.loading ? null : _pickAndImport,
               icon: const Icon(Icons.upload_file),
               label: const Text('Choose file'),
             ),
-            const SizedBox(height: 24),
+            const SizedBox(height: AppSpacing.xl),
             _buildStatusArea(),
           ],
         ),
@@ -205,7 +210,7 @@ class _LdsImportScreenState extends State<LdsImportScreen> {
 
   Widget _instructionStep(int number, String text) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 8),
+      padding: const EdgeInsets.only(bottom: AppSpacing.sm),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -214,10 +219,14 @@ class _LdsImportScreenState extends State<LdsImportScreen> {
             backgroundColor: Theme.of(context).colorScheme.primary,
             child: Text(
               '$number',
-              style: const TextStyle(fontSize: 12, color: Colors.white, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                fontSize: 12,
+                color: Theme.of(context).colorScheme.onPrimary,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
-          const SizedBox(width: 10),
+          const SizedBox(width: AppSpacing.md),
           Expanded(child: Text(text)),
         ],
       ),
@@ -225,48 +234,60 @@ class _LdsImportScreenState extends State<LdsImportScreen> {
   }
 
   Widget _buildStatusArea() {
+    final colorScheme = Theme.of(context).colorScheme;
+    final semanticColors = context.semanticColors;
+
     switch (_status) {
       case _ImportStatus.idle:
         return const SizedBox.shrink();
 
       case _ImportStatus.loading:
         return const Padding(
-          padding: EdgeInsets.symmetric(vertical: 24),
+          padding: EdgeInsets.symmetric(vertical: AppSpacing.xl),
           child: Center(child: CircularProgressIndicator()),
         );
 
       case _ImportStatus.success:
         final result = _result!;
         return Card(
-          color: Colors.green.shade50,
+          color: semanticColors.successContainer,
           child: Padding(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.all(AppSpacing.lg),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
                   children: [
-                    const Icon(Icons.check_circle, color: Colors.green),
-                    const SizedBox(width: 8),
+                    Icon(Icons.check_circle, color: semanticColors.success),
+                    const SizedBox(width: AppSpacing.sm),
                     Expanded(
                       child: Text(
                         'Imported ${result.rowsImported} row${result.rowsImported == 1 ? '' : 's'} '
                         'across ${result.locationsFound} location${result.locationsFound == 1 ? '' : 's'}.',
-                        style: const TextStyle(fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: semanticColors.onSuccessContainer,
+                        ),
                       ),
                     ),
                   ],
                 ),
                 if (result.warnings.isNotEmpty) ...[
-                  const SizedBox(height: 12),
-                  const Text('Warnings:', style: TextStyle(fontWeight: FontWeight.w600)),
-                  const SizedBox(height: 4),
+                  const SizedBox(height: AppSpacing.md),
+                  Text(
+                    'Warnings:',
+                    style: TextStyle(fontWeight: FontWeight.w600, color: semanticColors.onSuccessContainer),
+                  ),
+                  const SizedBox(height: AppSpacing.xs),
                   ...result.warnings.map((w) => Padding(
-                        padding: const EdgeInsets.only(top: 2),
-                        child: Text('• $w', style: const TextStyle(fontSize: 13)),
+                        padding: const EdgeInsets.only(top: AppSpacing.xxs),
+                        child: Text(
+                          '• $w',
+                          style: TextStyle(fontSize: 13, color: semanticColors.onSuccessContainer),
+                        ),
                       )),
                 ],
-                const SizedBox(height: 12),
+                const SizedBox(height: AppSpacing.md),
                 Align(
                   alignment: Alignment.centerRight,
                   child: TextButton(
@@ -281,16 +302,19 @@ class _LdsImportScreenState extends State<LdsImportScreen> {
 
       case _ImportStatus.error:
         return Card(
-          color: Colors.red.shade50,
+          color: colorScheme.errorContainer,
           child: Padding(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.all(AppSpacing.lg),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Icon(Icons.error, color: Colors.red),
-                const SizedBox(width: 8),
+                Icon(Icons.error, color: colorScheme.error),
+                const SizedBox(width: AppSpacing.sm),
                 Expanded(
-                  child: Text(_errorMessage ?? 'Something went wrong.'),
+                  child: Text(
+                    _errorMessage ?? 'Something went wrong.',
+                    style: TextStyle(color: colorScheme.onErrorContainer),
+                  ),
                 ),
               ],
             ),
